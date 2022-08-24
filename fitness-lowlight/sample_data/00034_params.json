@@ -1,0 +1,25 @@
+{
+  "params": {
+    "scene": "BEDROOM_4",
+    "exercise": "SQUAT-GOBLET+SUMO-DUMBBELL",
+    "gender": "FEMALE",
+    "num_reps": 14,
+    "rel_baseline_speed": "1.0235157769550134",
+    "max_rel_speed_change": "0.331551639697353",
+    "trim_start_frac": "0.18335272272986883",
+    "trim_end_frac": "0.07463752925729938",
+    "kinematic_noise_factor": 0.8932582733893275,
+    "camera_distance": "3.019659265905547",
+    "camera_height": "0.70820250944401",
+    "avatar_identity": "5",
+    "relative_height": "0.13582997652428366",
+    "relative_weight": "1.5216247089170594",
+    "relative_camera_yaw_deg": "0.0",
+    "relative_camera_pitch_deg": "0.0",
+    "lighting_power": "5.782452657855451",
+    "relative_avatar_angle_deg": "-29.61561483883881",
+    "frame_rate": 30,
+    "image_width": 512,
+    "image_height": 512
+  }
+}

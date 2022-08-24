@@ -1,0 +1,14 @@
+{
+  "params": {
+    "wrist_offset_deg": -4.612476001931988,
+    "ref_xy_rotation": 0.4158769439022947,
+    "watch_location": "LEFT",
+    "crown_orientation": "LEFT",
+    "randomize_body_shape": true,
+    "use_random_motion": true,
+    "frames_per_second": 20,
+    "image_width": 480,
+    "image_height": 480,
+    "num_random_frames": 146
+  }
+}

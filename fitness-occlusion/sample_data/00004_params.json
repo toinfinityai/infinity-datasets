@@ -1,0 +1,27 @@
+{
+  "params": {
+    "scene": "BEDROOM_2",
+    "exercise": "SITUP",
+    "gender": "MALE",
+    "num_reps": "14",
+    "rel_baseline_speed": "1.3989948321918386",
+    "max_rel_speed_change": "0.3994100622748079",
+    "trim_start_frac": "0.10795116978465538",
+    "trim_end_frac": "0.0176488271251108",
+    "kinematic_noise_factor": "0.9443345539814134",
+    "camera_distance": "3.0516447908646995",
+    "camera_height": "1.2255487818978121",
+    "min_dist_between_furniture": "1.2954400706329097",
+    "min_dist_furniture_to_avatar_camera": "1.0",
+    "avatar_identity": "6",
+    "relative_height": "-0.3555267964293833",
+    "relative_weight": "-0.4130184180539615",
+    "relative_camera_yaw_deg": "3.1291895284574665",
+    "relative_camera_pitch_deg": "-2.4751245885502007",
+    "lighting_power": "348.6173183877462",
+    "relative_avatar_angle_deg": "10.0",
+    "frame_rate": "30",
+    "image_width": "512",
+    "image_height": "512"
+  }
+}

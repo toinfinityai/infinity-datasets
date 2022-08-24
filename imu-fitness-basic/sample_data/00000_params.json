@@ -1,0 +1,23 @@
+{
+  "params": {
+    "exercise": "ARM_RAISE-DUMBBELL",
+    "num_reps": 12,
+    "watch_location": "RIGHT",
+    "crown_orientation": "LEFT",
+    "ref_xy_rotation": 4.8182613644283,
+    "rel_baseline_speed": 0.8510370720502487,
+    "max_rel_speed_change": 0.024017010832211482,
+    "trim_start_frac": 0.04508242426872511,
+    "trim_end_frac": 0.05799391174875721,
+    "kinematic_noise_factor": 0.9807214019189572,
+    "wrist_offset_deg": 9.20147176005916,
+    "use_random_motion": false,
+    "randomize_body_shape": true,
+    "frames_per_second": 20,
+    "image_width": 480,
+    "image_height": 480,
+    "random_seed": 677412957,
+    "seconds_per_rep": "1.0",
+    "num_random_frames": "100"
+  }
+}
