@@ -34,6 +34,8 @@ The dataset includes the following exercises:
 ## Getting Started
 Download the dataset from the [Infinity Marketplace](https://marketplace.infinity.ai/products/fitness-occlusions-dataset), and use the provided [quickstart notebook](quickstart.ipynb) to visualize labels.
 
+**NOTE:** If you want access to this dataset for FREE, send an email to info@toinfinity.ai 
+
 ## Contents
 For each dataset sample, we provide the following files:
 
@@ -137,5 +139,4 @@ For each frame of a video, the following segmentation masks are provided:
 * `image.{frame_number}.iseg.{annotation_id}.png`: Instance segmentation without occlusion
 
 ## Terms and Conditions
-This work is licensed under a
-[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). Both academic and commercial applications are allowed.
+This dataset is licensed under Infinity AI’s [Terms and Conditions](https://infinity.ai/terms). 
