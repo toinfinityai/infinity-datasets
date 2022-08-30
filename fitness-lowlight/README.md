@@ -12,8 +12,6 @@ A synthetic video dataset for fitness and physical therapy applications featurin
 ## Overview 
 The Fitness Low-Light Dataset focuses on various challenging lighting scenarios within the home fitness and physical therapy context. The dataset includes videos of 3 different exercises being performed by diverse avatars in settings with low light and correspondingly low signal to noise ratio (SNR). The dataset introduces several output metrics that report brightness, contrast, and SNR associated with each frame.
 
-This dataset focuses on challenging lighting conditions, so other model confounds such as partially out-of-frame avatars and occlusion are excluded. Per other Infinity datasets, there is significant variation in parameters such as camera and avatar placement, avatar identity, exercise kinematic variation, and exercise rep cadence.
-
 ## Dataset Features
 - 120 videos spanning 3 exercises.
 - Varying low-light scene illumination.
@@ -32,13 +30,15 @@ This dataset focuses on challenging lighting conditions, so other model confound
 
 The dataset includes the following exercises: 
 
-1. Bicep Curls
+1. Bicep Curls (alternating)
 2. Pushups
 3. Sumo Squats
 
 ## Getting Started
 
 Download the dataset from the [Infinity Marketplace](https://marketplace.infinity.ai/products/fitness-low-light-dataset), and use the provided [quickstart notebook](quickstart.ipynb) to visualize labels and filter the dataset based on provided metadata.
+
+**NOTE:** If you want access to this dataset for FREE, send an email to info@toinfinity.ai 
 
 ## Contents
 For each dataset sample, we provide the following files:
@@ -149,5 +149,4 @@ For each frame of a video, the following segmentation masks are provided:
 * `image.{frame_number}.iseg.{annotation_id}.png`: Instance segmentation without occlusion
 
 ## Terms and Conditions
-This work is licensed under a
-[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). Both academic and commercial applications are allowed.
+This dataset is licensed under Infinity AI’s [Terms and Conditions](https://infinity.ai/terms). 
