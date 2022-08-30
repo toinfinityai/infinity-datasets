@@ -11,10 +11,10 @@ A synthetic video dataset for fitness and physical therapy applications featurin
 
 
 ## Overview
-The Fitness Occlusion Dataset focuses on various challenging occlusion patterns within the home fitness and physical therapy context. The dataset includes videos of 5 different exercises being performed by avatars that are occluded by miscellaneous objects in the foreground. Objects were carefully chosen to introduce complex spatial patterns of occlusion. For each exercise, the amount of occlusion is curated to be roughly uniform between 5 and 60% across videos.
+The Fitness Occlusion Dataset focuses on various challenging occlusion patterns within the home fitness and physical therapy context. The dataset includes videos of 4 different exercises being performed by avatars that are occluded by miscellaneous objects in the foreground. Objects were carefully chosen to introduce complex spatial patterns of occlusion. For each exercise, the amount of occlusion is curated to be roughly uniform between 5 and 60% across videos.
 
 ## Dataset Features
-- 250 videos spanning 5 exercises.
+- 200 videos spanning 4 exercises.
 - Varying amounts of avatar occlusion (roughly uniform between 5 and 60% per exercise)
 - Complex occlusion patterns introduced by diverse objects.
 - 7-14 reps per video.
@@ -26,11 +26,10 @@ The Fitness Occlusion Dataset focuses on various challenging occlusion patterns 
 ## Exercises
 The dataset includes the following exercises:
 
-1. Pushups
-2. Situps
-3. Overhead Press (one arm)
-4. Sumo Squat
-5. Split Squat
+1. Situps
+2. Overhead Press (one arm)
+3. Sumo Squat
+4. Split Squat
 
 ## Getting Started
 Download the dataset from the [Infinity Marketplace](https://marketplace.infinity.ai/products/fitness-occlusions-dataset), and use the provided [quickstart notebook](quickstart.ipynb) to visualize labels.
