@@ -66,7 +66,7 @@ Instance-level annotations are provided for the floor and spill in each frame. I
 * `segmentation`: Polygon segmentation in standard COCO format.
 * `area`: Area enclosed by polygon segmentation.
 
-### Segmentation annotatations
+### Segmentation annotations
 
 For each frame of a video, the following segmentation masks are provided:
 
