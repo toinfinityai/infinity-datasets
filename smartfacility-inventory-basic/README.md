@@ -18,9 +18,9 @@ The Smart Facility: Inventory Basic Dataset is a synthetic, open-source dataset 
 + 1024px x 768px resolution
 + A total of 38 body care assets, randomly chosen and placed per video
 + A mean shelf fill factor varying from 10% to 100% across videos
-+ Randomized item orientations item visibility per video frame
++ Randomized item orientations and item visibility per video frame
 + Segmentation masks and rich annotations per item and item kind
-+ A variety of camera position with heights varying from ground-level to ceiling-level
++ A variety of camera positions with heights varying from ground-level to ceiling-level
 
 ## Getting Started 
 Download the dataset from the [Infinity Marketplace](https://marketplace.infinity.ai/products/smart-facility-inventory-basic-dataset), and use the provided [quickstart notebook](quickstart.ipynb) to visualize labels.
