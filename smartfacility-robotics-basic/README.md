@@ -11,19 +11,19 @@ An open-source synthetic vision dataset for smart facility and robotics applicat
 ## Overview
 The Smart Facility: Robotics Basic dataset is a synthetic, open-source dataset for smart facility and robotics applications. It features 20 videos of embodied multi-view cameras moving through a warehouse with in-domain actions, items, and ground truth annotations that support a varity of human-centric and other algorithms. These include:
 
-+ Human pose classification for smart ergonomics
-+ PPE classification and detection for safety/risk assessment
-+ Obstacle avoidance
-+ Inventory tracking
-+ Multi-camera SLAM applications
+- Human pose classification for smart ergonomics
+- PPE classification and detection for safety/risk assessment
+- Obstacle avoidance
+- Inventory tracking
+- Multi-camera SLAM applications
 
 ## Dataset Features
-+ 10 pairs of synchronized, multi-view videos, between 10 and 15 seconds in length 
-+ In-domain action sequences, including lifting and reaching movements with good and bad form
-+ Complex combinations of personal protective equipment, including hardhats, goggles, ear protection, and safety vests
-+ Fully segmented items on the floor and shelves
-+ Procedurally generated camera paths (including object avoidance) for increased variation
-+ Rich annotations, including fully segmented scenes and 3D keypoints
+- 10 pairs of synchronized, multi-view videos, between 10 and 15 seconds in length 
+- In-domain action sequences, including lifting and reaching movements with good and bad form
+- Complex combinations of personal protective equipment, including hardhats, goggles, ear protection, and safety vests
+- Fully segmented items on the floor and shelves
+- Procedurally generated camera paths (including object avoidance) for increased variation
+- Rich annotations, including fully segmented scenes and 3D keypoints
 
 ## Getting Started 
 Download the dataset from the [Infinity Marketplace](https://marketplace.infinity.ai/products/smart-facility-robotics-basic-dataset), and use the provided [quickstart notebook](quickstart.ipynb) to visualize labels.
@@ -84,12 +84,12 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 ### Instance-level annotations
 Instance-level annotations are provided for the each object in the image, including PPE items worn by the avatars and boxes on the shelves. Avatar-specific annotations are provided for every image, regardless of whether the avatar is in-frame or not. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure. Instance-level annotations include:
 
-* `color`: Normalized RGB value in the corresponding instance segmentation masks.
-* `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of occlusion status. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.
-* `bbox`: Bounding box in standard COCO format.
-* `segmentation`: Polygon segmentation in standard COCO format.
-* `area`: Area enclosed by polygon segmentation.
-* `cuboid_coordinates`: Image coordinates (xy) and depth (z) values of the 3D cuboid enclosing the instance, with axes that are parallel to the global coordinate system. The order of the cuboid points is shown below. Negative z values indicate that a point is behind the camera.
+- `color`: Normalized RGB value in the corresponding instance segmentation masks.
+- `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of occlusion status. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.
+- `bbox`: Bounding box in standard COCO format.
+- `segmentation`: Polygon segmentation in standard COCO format.
+- `area`: Area enclosed by polygon segmentation.
+- `cuboid_coordinates`: Image coordinates (xy) and depth (z) values of the 3D cuboid enclosing the instance, with axes that are parallel to the global coordinate system. The order of the cuboid points is shown below. Negative z values indicate that a point is behind the camera.
 
 ```
    3-------2
@@ -103,24 +103,24 @@ Instance-level annotations are provided for the each object in the image, includ
 
 For all annotations associated with an avatar (i.e. belonging to the `person` category), we provide the following additional annotations:
 
-* `person_idx`: Index of the person in the scene. Useful for collecting all annotations (across time) for a specific avatar.
-* `gender`: Gender of the underlying SMPL-X body model.
-* `action`: Action that the avatar is performing in a given frame.
-* `ppe`: Dictionary indicating which PPE items the avatar is wearing.
-* `armature_keypoints`: A data structure including image coordinates (x,y), visibility (v), depth from camera (z, in meters), and 3D position in the global coordinate system (x_global, y_global, z_global; in meters) for each degree-of-freedom in the underlying SMPL-X model. Visibility values indicate whether keypoints are not in the image frame (0), in the image frame but occluded (1), or visible (2). Negative z values indicate that a point is behind the camera.
-* `keypoints`: Image coordinates and visibility in standard COCO format for each keypoint in the 17-point COCO skeleton. Visibility labels are defined as in `armature_keypoints`. Note that the hip keypoints in this data structure correspond to different locations than those in `armature_keypoints`. Specifically, they correspond to a more lateral location designed to better reflect where human annotators typically place the hips (e.g. in the COCO dataset).
-* `num_keypoints`: Number of keypoints in the COCO skeleton with non-zero visibility.
-* `percent_occlusion`: Percentage of the instance that is not visibile due to environmental occlusion (i.e. objects in the foreground). It is quantified as the relative difference between the occluded and unoccluded instance segmentation masks, which are also provided.
-* `yaw_rotation_deg`: Rotation of the avatar around the Z-axis in the global coordinate sytem, in degrees. Only provided for static (non-walking) avatars.
-* `location`: Location of the avatar in the global coordinate system, in meters. Only provided for static (non-walking) avatars.
+- `person_idx`: Index of the person in the scene. Useful for collecting all annotations (across time) for a specific avatar.
+- `gender`: Gender of the underlying SMPL-X body model.
+- `action`: Action that the avatar is performing in a given frame.
+- `ppe`: Dictionary indicating which PPE items the avatar is wearing.
+- `armature_keypoints`: A data structure including image coordinates (x,y), visibility (v), depth from camera (z, in meters), and 3D position in the global coordinate system (x_global, y_global, z_global; in meters) for each degree-of-freedom in the underlying SMPL-X model. Visibility values indicate whether keypoints are not in the image frame (0), in the image frame but occluded (1), or visible (2). Negative z values indicate that a point is behind the camera.
+- `keypoints`: Image coordinates and visibility in standard COCO format for each keypoint in the 17-point COCO skeleton. Visibility labels are defined as in `armature_keypoints`. Note that the hip keypoints in this data structure correspond to different locations than those in `armature_keypoints`. Specifically, they correspond to a more lateral location designed to better reflect where human annotators typically place the hips (e.g. in the COCO dataset).
+- `num_keypoints`: Number of keypoints in the COCO skeleton with non-zero visibility.
+- `percent_occlusion`: Percentage of the instance that is not visibile due to environmental occlusion (i.e. objects in the foreground). It is quantified as the relative difference between the occluded and unoccluded instance segmentation masks, which are also provided.
+- `yaw_rotation_deg`: Rotation of the avatar around the Z-axis in the global coordinate sytem, in degrees. Only provided for static (non-walking) avatars.
+- `location`: Location of the avatar in the global coordinate system, in meters. Only provided for static (non-walking) avatars.
 
 ### Segmentation annotations
 
 For each frame of a video, the following segmentation masks are provided:
 
-* `image.{frame_number}.cseg.png`: Semantic segmentation.
-* `image.{frame_number}.iseg.png`: Instance segmentation.
-* `image.{frame_number}.iseg.{annotation_id}.png`: Instance segmentation without occlusion (only provided for `person` annotations).
+- `image.{frame_number}.cseg.png`: Semantic segmentation.
+- `image.{frame_number}.iseg.png`: Instance segmentation.
+- `image.{frame_number}.iseg.{annotation_id}.png`: Instance segmentation without occlusion (only provided for `person` annotations).
 
 ## Terms and Conditions
 This work is licensed under a
