@@ -140,7 +140,7 @@ We also provide the following annotations for each `person` instance:
 * `num_keypoints`: Number of keypoints in the COCO skeleton with non-zero visibility.
 * `quaternions`: 3D rotations for each degree-of-freedom in the SMPL-X model, relative to its parent in the kinematic tree, in wxyz order.
 
-### Segmentation annotatations
+### Segmentation annotations
 
 For each frame of a video, the following segmentation masks are provided:
 

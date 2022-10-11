@@ -114,7 +114,7 @@ For all annotations associated with an avatar (i.e. belonging to the `person` ca
 * `yaw_rotation_deg`: Rotation of the avatar around the Z-axis in the global coordinate sytem, in degrees. Only provided for static (non-walking) avatars.
 * `location`: Location of the avatar in the global coordinate system, in meters. Only provided for static (non-walking) avatars.
 
-### Segmentation annotatations
+### Segmentation annotations
 
 For each frame of a video, the following segmentation masks are provided:
 
