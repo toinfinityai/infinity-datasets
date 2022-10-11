@@ -74,6 +74,16 @@ Instance-level annotations are provided for the inventory items and all other ob
 - `area`: Area enclosed by polygon segmentation.
 - `cuboid_coordinates`: Image coordinates (xy) and depth (z) values of the 3D cuboid enclosing the instance, with axes that are parallel to the global coordinate system. The order of the cuboid points is shown below. Negative z values indicate that a point is behind the camera.
 
+```
+   3-------2
+  /|      /|
+ / |     / |
+0-------1  |
+|  7----|--6
+| /     | /
+4-------5
+```
+
 ### Segmentation annotations
 
 For each frame of a video, the following segmentation masks are provided:
