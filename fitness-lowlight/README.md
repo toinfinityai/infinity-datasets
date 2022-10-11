@@ -82,20 +82,20 @@ The `{video_number}_labels.json` file is provided in standard [COCO](https://coc
 Scene-level annotations are provided for each video. They are accessible via the top-level `info` field of the JSON data structure. Scene-level annotations include:
 
 
-* `camera_pitch`: Pitch rotation of the camera in the global coordinate system, in degrees. A value of 90 indicates the camera's line of sight is parallel to the ground plane.
-* `camera_yaw`: Yaw rotation of the camera in the global coordinate system, in degrees. A value of 0 indicates the camera's line of sight is aligned with the +Y axis.
-* `camera_location`: Location of the camera in the global coordinate system, in meters.
-* `camera_height`: Height of the camera in the global coordinate system, in meters.
-* `avatar_yaw`: Yaw rotation of the avatar in the global coordinate system, in degrees.
-* `avatar_presenting_gender`: Gender of the underlying SMPL-X body model.
-* `avatar_attire_top`/`avatar_attire_bottom`: Clothing type used in the applied UV texture.
-* `avatar_betas`: 10 shape coefficients for the underlying SMPL-X body model.
-* `avatar_waist_circumference`: Circumference of the SMPL-X body model's waist, in meters.
-* `avatar_location`: Location of the avatar in the global coordinate system, in meters.
-* `avatar_identity`: Integer-based unique idenfier that controls the chosen avatar appearance.
-* `camera_P_matrix`: P matrix of the synthetic camera. This can be used to project any 3D position in the global coordinate system onto the image plane. Note that `P = K @ RT`.
-* `camera_K_matrix`: Intrinsic K matrix of the synthetic camera.
-* `camera_RT_matrix`: Extrinsic RT matrix of the synthetic camera (rotation + translation).
+- `camera_pitch`: Pitch rotation of the camera in the global coordinate system, in degrees. A value of 90 indicates the camera's line of sight is parallel to the ground plane.
+- `camera_yaw`: Yaw rotation of the camera in the global coordinate system, in degrees. A value of 0 indicates the camera's line of sight is aligned with the +Y axis.
+- `camera_location`: Location of the camera in the global coordinate system, in meters.
+- `camera_height`: Height of the camera in the global coordinate system, in meters.
+- `avatar_yaw`: Yaw rotation of the avatar in the global coordinate system, in degrees.
+- `avatar_presenting_gender`: Gender of the underlying SMPL-X body model.
+- `avatar_attire_top`/`avatar_attire_bottom`: Clothing type used in the applied UV texture.
+- `avatar_betas`: 10 shape coefficients for the underlying SMPL-X body model.
+- `avatar_waist_circumference`: Circumference of the SMPL-X body model's waist, in meters.
+- `avatar_location`: Location of the avatar in the global coordinate system, in meters.
+- `avatar_identity`: Integer-based unique idenfier that controls the chosen avatar appearance.
+- `camera_P_matrix`: P matrix of the synthetic camera. This can be used to project any 3D position in the global coordinate system onto the image plane. Note that `P = K @ RT`.
+- `camera_K_matrix`: Intrinsic K matrix of the synthetic camera.
+- `camera_RT_matrix`: Extrinsic RT matrix of the synthetic camera (rotation + translation).
 
 ### Frame-level annotations
 Frame-level annotations are provided for each frame of a video. They are accessible via the top-level `images` field of the JSON data structure. Frame-level annotations include:
@@ -114,13 +114,13 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 Instance-level annotations are provided for every unique object segmented in an image. This includes the avatar, dumbbells (if present), and the miscellaneous objects used to introduce complex occlusion patterns. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure.
 
 
-* `color`: Normalized RGB value in the corresponding instance segmentation masks
-* `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of occlusion status. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.
-* `percent_occlusion`: Percentage of the instance that is not visibile due to environmental occlusion (i.e. objects in the foreground). It is quantified as the relative difference between the occluded and unoccluded instance segmentation masks, which are also provided.
-* `bbox`: Bounding box in standard COCO format
-* `segmentation`: Polygon segmentation in standard COCO format
-* `area`: Area enclosed by polygon segmentation
-* `cuboid_coordinates`: Image coordinates of the surroinding 3D cuboid, with axes that are parallel to the global coordinate system. The order of the cuboid points is shown below.
+- `color`: Normalized RGB value in the corresponding instance segmentation masks
+- `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of occlusion status. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.
+- `percent_occlusion`: Percentage of the instance that is not visibile due to environmental occlusion (i.e. objects in the foreground). It is quantified as the relative difference between the occluded and unoccluded instance segmentation masks, which are also provided.
+- `bbox`: Bounding box in standard COCO format
+- `segmentation`: Polygon segmentation in standard COCO format
+- `area`: Area enclosed by polygon segmentation
+- `cuboid_coordinates`: Image coordinates of the surroinding 3D cuboid, with axes that are parallel to the global coordinate system. The order of the cuboid points is shown below.
 
 ```
    3-------2
@@ -134,19 +134,19 @@ Instance-level annotations are provided for every unique object segmented in an 
 
 We also provide the following annotations for each `person` instance:
 
-* `armature_keypoints`: A data structure including image coordinates (x,y), visibility (v), depth from camera (z, in meters), and 3D position in the global coordinate system (x_global, y_global, z_global; in meters) for each degree-of-freedom in the underlying SMPL-X model. Visibility values indicate whether keypoints are not in the image frame (0), in the image frame but occluded (1), or visible (2).
-* `vertex_keypoints`: A data structure including image coordinates (x,y), visibility (v), depth from camera (z, in meters), and 3D position in the global coordinate system (x_global, y_global, z_global; in meters) for various anatomical points of interest on the SMPL-X body mesh. Points of interest include the ears and nose. Visibility labels are defined as in `armature_keypoints`.
-* `keypoints`: Image coordinates and visibility in standard COCO format for each keypoint in the 17-point COCO skeleton. Visibility labels are defined as in `armature_keypoints`. Note that the hip keypoints in this data structure correspond to different locations than those in `armature_keypoints`. Specifically, they correspond to a more lateral location designed to better reflect where human annotators typically place the hips (e.g. in the COCO dataset).
-* `num_keypoints`: Number of keypoints in the COCO skeleton with non-zero visibility.
-* `quaternions`: 3D rotations for each degree-of-freedom in the SMPL-X model, relative to its parent in the kinematic tree, in wxyz order.
+- `armature_keypoints`: A data structure including image coordinates (x,y), visibility (v), depth from camera (z, in meters), and 3D position in the global coordinate system (x_global, y_global, z_global; in meters) for each degree-of-freedom in the underlying SMPL-X model. Visibility values indicate whether keypoints are not in the image frame (0), in the image frame but occluded (1), or visible (2).
+- `vertex_keypoints`: A data structure including image coordinates (x,y), visibility (v), depth from camera (z, in meters), and 3D position in the global coordinate system (x_global, y_global, z_global; in meters) for various anatomical points of interest on the SMPL-X body mesh. Points of interest include the ears and nose. Visibility labels are defined as in `armature_keypoints`.
+- `keypoints`: Image coordinates and visibility in standard COCO format for each keypoint in the 17-point COCO skeleton. Visibility labels are defined as in `armature_keypoints`. Note that the hip keypoints in this data structure correspond to different locations than those in `armature_keypoints`. Specifically, they correspond to a more lateral location designed to better reflect where human annotators typically place the hips (e.g. in the COCO dataset).
+- `num_keypoints`: Number of keypoints in the COCO skeleton with non-zero visibility.
+- `quaternions`: 3D rotations for each degree-of-freedom in the SMPL-X model, relative to its parent in the kinematic tree, in wxyz order.
 
 ### Segmentation annotatations
 
 For each frame of a video, the following segmentation masks are provided:
 
-* `image.{frame_number}.cseg.png`: Semantic segmentation
-* `image.{frame_number}.iseg.png`: Instance segmentation
-* `image.{frame_number}.iseg.{annotation_id}.png`: Instance segmentation without occlusion
+- `image.{frame_number}.cseg.png`: Semantic segmentation
+- `image.{frame_number}.iseg.png`: Instance segmentation
+- `image.{frame_number}.iseg.{annotation_id}.png`: Instance segmentation without occlusion
 
 ## Terms and Conditions
 This dataset is licensed under Infinity AI’s [Terms and Conditions](https://infinity.ai/terms). 
