@@ -9,7 +9,7 @@ An open-source synthetic vision dataset for smart facility and robotics applicat
 </p>
 
 ## Overview
-The Smart Facility: Robotics Basic dataset is a synthetic, open-source dataset for smart facility and robotics applications. It features 20 videos of embodied multi-view cameras moving through a warehouse with in-domain actions, items, and ground truth annotations that support a varity of human-centric and other algorithms. These include:
+The Smart Facility: Robotics Basic Dataset is a synthetic, open-source dataset for smart facility and robotics applications. It includes 20 videos as captured by a multi-camera system moving through a complex warehouse environment. The dataset features in-domain actions, items, and ground truth annotations that support a variety of algorithms, including:
 
 - Human pose classification for smart ergonomics
 - PPE classification and detection for safety/risk assessment
@@ -22,7 +22,7 @@ The Smart Facility: Robotics Basic dataset is a synthetic, open-source dataset f
 - In-domain action sequences, including lifting and reaching movements with good and bad form
 - Complex combinations of personal protective equipment, including hardhats, goggles, ear protection, and safety vests
 - Fully segmented items on the floor and shelves
-- Procedurally generated camera paths (including object avoidance) for increased variation
+- Procedurally generated camera motion paths that are unique to each video and exhibit no object collisions
 - Rich annotations, including fully segmented scenes and 3D keypoints
 
 ## Getting Started 
@@ -48,10 +48,10 @@ The `{video_number}_params.json` file provided for each dataset sample includes 
 - `camera_type`: Type of camera (perspective or fisheye).
 - `camera_focal_length`: Focal length of camera, in millimeters.
 - `camera_field_of_view`: Field of view of fisheye lens, in degrees.
-- `camera0_height`: Height of camera 0, in meters.
-- `camera0_yaw_deg`: Rotation of camera 0 (relative to forward motion), in degrees.
-- `camera1_height`: Height of camera 1, in meters.
-- `camera1_yaw_deg`: Rotation of camera 1 (relative to forward motion), in degrees.
+- `camera0_height`: Height of Camera 0, in meters.
+- `camera0_yaw_deg`: Rotation of Camera 0 (relative to forward motion), in degrees.
+- `camera1_height`: Height of Camera 1, in meters.
+- `camera1_yaw_deg`: Rotation of Camera 1 (relative to forward motion), in degrees.
 - `camera_pitch_deg`: Pitch of cameras (relative to ground plane), in degrees.
 - `camera_min_path_length`: Minimum length of procedurally generated, closed-loop camera path.
 - `image_width`: Width of rendered video(s), in pixels.
@@ -77,7 +77,7 @@ Scene-level annotations are provided for each video. They are accessible via the
 Frame-level annotations are provided for each frame of a video. They are accessible via the top-level `images` field of the JSON data structure. Frame-level annotations include:
 
 - `frame_number`: The frame number of the corresponding image.
-- `camera_location_m`: Location of the camera, in world space and meters.
+- `camera_location_m`: Location of the camera in the global coordinate system, in meters.
 - `camera_P_matrix`: P matrix of the synthetic camera. This can be used to project any 3D position in the global coordinate system onto the image plane. Note that `P = K @ RT`.
 - `camera_RT_matrix`: Extrinsic RT matrix of the synthetic camera (rotation + translation).
 
@@ -85,7 +85,7 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 Instance-level annotations are provided for the each object in the image, including PPE items worn by the avatars and boxes on the shelves. Avatar-specific annotations are provided for every image, regardless of whether the avatar is in-frame or not. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure. Instance-level annotations include:
 
 - `color`: Normalized RGB value in the corresponding instance segmentation masks.
-- `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of occlusion status. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.
+- `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of whether those vertices are occluded by other objects. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.
 - `bbox`: Bounding box in standard COCO format.
 - `segmentation`: Polygon segmentation in standard COCO format.
 - `area`: Area enclosed by polygon segmentation.
