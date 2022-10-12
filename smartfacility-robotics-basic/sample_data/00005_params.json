@@ -1,0 +1,24 @@
+{
+    "params": {
+        "scene": "WAREHOUSE_0001",
+        "num_people": 5,
+        "frame_rate": 12,
+        "random_seed": 621,
+        "num_cameras": 2,
+        "camera_type": "PERSPECTIVE",
+        "camera_focal_length": 32.0,
+        "camera_field_of_view": 82.0,
+        "camera0_height": 0.3,
+        "camera0_yaw_deg": 0.0,
+        "camera1_height": 0.3,
+        "camera1_yaw_deg": 180.0,
+        "camera_pitch_deg": 0.0,
+        "camera_min_path_length": 5.0,
+        "image_width": 1024,
+        "image_height": 768,
+        "enable_clutter": true,
+        "min_dist_between_clutter_objects": 3.0,
+        "video_duration": 13.523960777659562,
+        "camera_speed": 0.6623998978642437
+    }
+}

@@ -73,7 +73,7 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 Instance-level annotations are provided for every unique object belonging to the `person` or `dumbbell` category. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure.
 
 - `color`: Normalized RGB value in the corresponding instance segmentation masks
-- `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of occlusion status. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.
+- `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of whether those vertices are occluded by other objects. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.
 - `percent_occlusion`: Percentage of the instance that is not visibile due to environmental occlusion (i.e. objects in the foreground). It is quantified as the relative difference between the occluded and unoccluded instance segmentation masks, which are also provided.
 - `bbox`: Bounding box in standard COCO format
 - `segmentation`: Polygon segmentation in standard COCO format
@@ -97,7 +97,7 @@ We also provide the following annotations for each `person` instance:
 - `num_keypoints`: Number of keypoints in the COCO skeleton with non-zero visibility.
 - `quaternions`: 3D rotations for each degree-of-freedom in the SMPL-X model, relative to its parent in the kinematic tree, in wxyz order.
 
-### Segmentation annotatations
+### Segmentation annotations
 
 For each frame of a video, the following segmentation masks are provided:
 

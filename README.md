@@ -7,12 +7,15 @@
 This repo contains READMEs and quickstart guides for datasets in the **Infinity Marketplace**. To download a dataset, visit the Infinity Marketplace: [marketplace.infinity.ai](https://marketplace.infinity.ai)
 
 ## Datasets 
-+ **[fitness-basic](fitness-basic)**: an open-source synthetic dataset for remote fitness and remote PT applications.
-+ **[fitness-lowlight](fitness-lowlight)**: a synthetic video dataset for remote fitness and PT applications with a variety of challenging lighting scenarios.
-+ **[fitness-occlusion](fitness-occlusion)**: a synthetic vision dataset for remote fitness and PT application with a variety of avatar occlusions.
-+ **[imu-fitness-basic](imu-fitness-basic)**: an open-source synthetic IMU dataset for wearable fitness applications.
-+ **[imu-random-motion](imu-random-motion)**: an open-source synthetic IMU dataset of random movements to make models robust to non-target movements.
-+ **[smartfacility-spills-basic](smartfacility-spills-basic)**: an open-source synthetic vision dataset for safety applications and spill detection.
+- **[fitness-basic](fitness-basic)**: an open-source synthetic dataset for remote fitness and remote PT applications.
+- **[fitness-lowlight](fitness-lowlight)**: a synthetic video dataset for remote fitness and PT applications with a variety of challenging lighting scenarios.
+- **[fitness-occlusion](fitness-occlusion)**: a synthetic vision dataset for remote fitness and PT application with a variety of avatar occlusions.
+- **[imu-fitness-basic](imu-fitness-basic)**: an open-source synthetic IMU dataset for wearable fitness applications.
+- **[imu-random-motion](imu-random-motion)**: an open-source synthetic IMU dataset of random movements to make models robust to non-target movements.
+- **[smartfacility-spills-basic](smartfacility-spills-basic)**: an open-source synthetic vision dataset for safety applications and spill detection.
+- **[smartfacility-inventory-basic](smartfacility-inventory-basic)**: an open-source synthetic vision dataset for smart inventory applications.
+- **[smartfacility-robotics-basic](smartfacility-robotics-basic)**: an open-source synthetic vision dataset for smart facility and robotics applications.
+
 
 ## Resources
 
