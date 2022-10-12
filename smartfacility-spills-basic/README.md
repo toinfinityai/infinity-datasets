@@ -61,17 +61,17 @@ Instance-level annotations are provided for the floor and spill in each frame. I
 
 **Note: The instance-level annotations enumerated below are only provided when a non-empty bounding box can be defined.** Annotations may not be provided for the spill in early frames when it occupies an area less than 3 pixels in height and width.
 
-* `color`: Normalized RGB value in the corresponding instance segmentation masks.
-* `bbox`: Bounding box in standard COCO format.
-* `segmentation`: Polygon segmentation in standard COCO format.
-* `area`: Area enclosed by polygon segmentation.
+- `color`: Normalized RGB value in the corresponding instance segmentation masks.
+- `bbox`: Bounding box in standard COCO format.
+- `segmentation`: Polygon segmentation in standard COCO format.
+- `area`: Area enclosed by polygon segmentation.
 
-### Segmentation annotatations
+### Segmentation annotations
 
 For each frame of a video, the following segmentation masks are provided:
 
-* `image.{frame_number}.cseg.png`: Semantic segmentation.
-* `image.{frame_number}.iseg.png`: Instance segmentation.
+- `image.{frame_number}.cseg.png`: Semantic segmentation.
+- `image.{frame_number}.iseg.png`: Instance segmentation.
 
 ## Terms and Conditions
 This work is licensed under a
