@@ -12,7 +12,7 @@ An open-source synthetic vision dataset for smart facility and robotics applicat
 The Smart Facility: Robotics Basic Dataset is a synthetic, open-source dataset for smart facility and robotics applications. It includes 20 videos as captured by a multi-camera system moving through a complex warehouse environment. The dataset features in-domain actions, items, and ground truth annotations that support a variety of algorithms, including:
 
 - Human pose classification for smart ergonomics
-- PPE classification and detection for safety/risk assessment
+- PPE detection and classification for safety or risk assessment
 - Obstacle avoidance
 - Inventory tracking
 - Multi-camera SLAM applications
@@ -20,7 +20,7 @@ The Smart Facility: Robotics Basic Dataset is a synthetic, open-source dataset f
 ## Dataset Features
 - 10 pairs of synchronized, multi-view videos, between 10 and 15 seconds in length 
 - In-domain action sequences, including lifting and reaching movements with good and bad form
-- Complex combinations of personal protective equipment, including hardhats, goggles, ear protection, and safety vests
+- Complex combinations of personal protective equipment — including hardhats, goggles, ear protection, and safety vests — with multiple color options
 - Fully segmented items on the floor and shelves
 - Procedurally generated camera motion paths that are unique to each video and exhibit no object collisions
 - Rich annotations, including fully segmented scenes and 3D keypoints
