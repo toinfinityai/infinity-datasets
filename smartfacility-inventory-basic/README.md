@@ -64,9 +64,7 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 - `frame_number`: The frame number of the corresponding image.
 
 ### Instance-level annotations
-Instance-level annotations are provided for the inventory items and all other objects in the scene. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure. 
-
-**Note: The instance-level annotations enumerated below are only provided when a non-empty bounding box can be defined.** Annotations for items out of camera field of view are available, but they won't contain these keys.
+Instance-level annotations are provided for the inventory items and all other objects in the scene. They are accessible via the top-level `annotations` field of the JSON data structure. Instance-level annotations include:
 
 - `color`: Normalized RGB value in the corresponding instance segmentation masks.
 - `bbox`: Bounding box in standard COCO format.
@@ -83,6 +81,9 @@ Instance-level annotations are provided for the inventory items and all other ob
 | /     | /
 4-------5
 ```
+
+**Note: The instance-level annotations enumerated above are only provided when a non-empty bounding box can be defined.** Annotations for items outside the camera's field of view are available, but they won't contain these keys.
+
 
 ### Segmentation annotations
 

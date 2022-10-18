@@ -19,11 +19,11 @@ The Smart Facility: Safety Basic Dataset is a synthetic, open-source dataset for
 
 ## Dataset Features
 
-- 15 videos, each one 10 seconds in duration with 12 fps frame rate
+- 15 videos, 10 seconds each, 12 fps frame rate
 - 3 unique background scenes
 - 1080px x ~720px resolution (exact height is scene-dependent)
 - In-domain action sequences, including lifting and reaching movements with good and bad form
-- Complex combinations of personal protective equipment — including hardhats, goggles, ear protection, and safety vests — with multiple color options
+- Complex combinations of personal protective equipment — including hardhats, goggles, respirators, ear protection, and safety vests — with multiple color options available.
 - Rich annotations, including 2D/3D keypoints, frame-specific activity labels, and segmentation masks for each PPE item
 
 ## Getting Started 
@@ -58,7 +58,7 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 - `frame_number`: The frame number of the corresponding image.
 
 ### Instance-level annotations
-Instance-level annotations are provided for each avatar and its corresponding PPE items. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure. 
+Instance-level annotations are provided for each avatar and its corresponding PPE items. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure. Instance-level annotations include:
 
 - `color`: Normalized RGB value in the corresponding instance segmentation masks.
 - `bbox`: Bounding box in standard COCO format.
@@ -78,7 +78,7 @@ Instance-level annotations are provided for each avatar and its corresponding PP
 
 For all annotations associated with an avatar (i.e. belonging to the `person` category), we provide the following additional annotations:
 
-- `person_idx`: Index of the person in the scene. Useful for collecting all annotations (across time) for a specific avatar.
+- `person_idx`: Index of the person in the scene. Useful for collecting all annotations across time for a specific avatar.
 - `gender`: Gender of the underlying SMPL-X body model.
 - `action`: Action that the avatar is performing in a given frame.
 - `ppe`: Dictionary indicating which PPE items the avatar is wearing.

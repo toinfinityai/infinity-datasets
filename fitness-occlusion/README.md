@@ -101,7 +101,7 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 - `rep_count_from_intermediate`: This value is conceptually similar to `rep_count_from_start`, but is instead indexed to the midpoint of the rep. We provide both since users may wish to define (for example) the point of most flexion OR the point of most extension as the rep inflection point.
 
 ### Instance-level annotations
-Instance-level annotations are provided for `person` and `dumbbell` categories. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure.
+Instance-level annotations are provided for `person` and `dumbbell` categories. They are accessible via the top-level `annotations` field of the JSON data structure. Instance-level annotations include:
 
 
 - `color`: Normalized RGB value in the corresponding instance segmentation masks
