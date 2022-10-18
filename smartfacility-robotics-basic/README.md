@@ -20,7 +20,7 @@ The Smart Facility: Robotics Basic Dataset is a synthetic, open-source dataset f
 ## Dataset Features
 - 10 pairs of synchronized, multi-view videos, between 10 and 15 seconds in length 
 - In-domain action sequences, including lifting and reaching movements with good and bad form
-- Complex combinations of personal protective equipment — including hardhats, goggles, respirators, ear protection, and safety vests — with multiple color options available.
+- Complex combinations of personal protective equipment — including hardhats, goggles, respirators, ear protection, and safety vests — with multiple color options available
 - Fully segmented items on the floor and shelves
 - Procedurally generated camera motion paths that are unique to each video and exhibit no object collisions
 - Rich annotations, including fully segmented scenes and 3D keypoints

@@ -23,7 +23,7 @@ The Smart Facility: Safety Basic Dataset is a synthetic, open-source dataset for
 - 3 unique background scenes
 - 1080px x ~720px resolution (exact height is scene-dependent)
 - In-domain action sequences, including lifting and reaching movements with good and bad form
-- Complex combinations of personal protective equipment — including hardhats, goggles, respirators, ear protection, and safety vests — with multiple color options available.
+- Complex combinations of personal protective equipment — including hardhats, goggles, respirators, ear protection, and safety vests — with multiple color options available
 - Rich annotations, including 2D/3D keypoints, frame-specific activity labels, and segmentation masks for each PPE item
 
 ## Getting Started 
