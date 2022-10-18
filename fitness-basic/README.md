@@ -70,7 +70,7 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 - `rep_count`: The number of repetitions completed since the beginning of the video PLUS a float in the range of [0,1] that indicates the current frame’s relative position in the exercise sequence. For example, a value of 4.23 indicates that 4 full repetitions have been completed since the beginning of the video, and that the current frame corresponds to 23% completion of the next one.
 
 ### Instance-level annotations
-Instance-level annotations are provided for every unique object belonging to the `person` or `dumbbell` category. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure.
+Instance-level annotations are provided for every unique object belonging to the `person` or `dumbbell` category. They are accessible via the top-level `annotations` field of the JSON data structure. Instance-level annotations include:
 
 - `color`: Normalized RGB value in the corresponding instance segmentation masks
 - `percent_in_fov`: Percentage of the vertices from the underlying mesh that are within the camera's field-of-view, regardless of whether those vertices are occluded by other objects. This value can be used to disambiguate whether sparse instance segmentation masks reflect a high degree of environmental occlusion versus the instance being out-of-frame.

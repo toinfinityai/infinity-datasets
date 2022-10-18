@@ -15,6 +15,7 @@ This repo contains READMEs and quickstart guides for datasets in the **Infinity 
 - **[smartfacility-spills-basic](smartfacility-spills-basic)**: an open-source synthetic vision dataset for safety applications and spill detection.
 - **[smartfacility-inventory-basic](smartfacility-inventory-basic)**: an open-source synthetic vision dataset for smart inventory applications.
 - **[smartfacility-robotics-basic](smartfacility-robotics-basic)**: an open-source synthetic vision dataset for smart facility and robotics applications.
+- **[smartfacility-safety-basic](smartfacility-safety-basic)**: an open-source synthetic vision dataset for workplace safety applications with fixed-camera systems.
 
 
 ## Resources

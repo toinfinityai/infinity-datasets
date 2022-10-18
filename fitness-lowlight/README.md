@@ -111,7 +111,7 @@ Frame-level annotations are provided for each frame of a video. They are accessi
 - `mean_color_contrast`: This is the [Delta E (dE00)](http://zschuessler.github.io/DeltaE/learn/) metric, a kind of distance metric in the CIELAB color space, which varies from 0 to 100. On this scale, a color contrast near zero means colors are imperceptibly different, while colors above a contrast of 50 are more different than they are similar. Note that the contrast is computed as the average contrast over several sectors of the avatar and its surroundings.
 
 ### Instance-level annotations
-Instance-level annotations are provided for every unique object segmented in an image. This includes the avatar, dumbbells (if present), and the miscellaneous objects used to introduce complex occlusion patterns. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure.
+Instance-level annotations are provided for every unique object segmented in an image. This includes the avatar, dumbbells (if present), and the miscellaneous objects used to introduce complex occlusion patterns. Instance-level annotations are accessible via the top-level `annotations` field of the JSON data structure. They include:
 
 
 - `color`: Normalized RGB value in the corresponding instance segmentation masks

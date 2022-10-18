@@ -1,0 +1,11 @@
+{
+    "name": "safety-v0.1.0",
+    "params": {
+        "video_duration": 10.0,
+        "frame_rate": 12,
+        "scene": "WAREHOUSE_0001",
+        "max_dimension": 1080,
+        "num_people": 5,
+        "random_seed": 22241
+    }
+}
