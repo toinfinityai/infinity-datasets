@@ -25,7 +25,7 @@ This repo contains READMEs and quickstart guides for datasets in the **Infinity 
 Download datasets and browse APIs
 
 🗒 **Read the Infinity Blog**  
-[medium.com/infinity-ai](https://medium.com/infinity-ai)  
+[blog.infinity.ai](https://blog.infinity.ai/)
 Get tips and tricks for how to improve your model performance with synthetic data. 
 
 👋 **Say hi!**   
